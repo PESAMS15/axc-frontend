@@ -1,0 +1,10 @@
+#loader {
+    position: fixed;
+    background-color: rgba(108, 107, 121, 0.199);
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 999999;
+    cursor: not-allowed;
+}

@@ -149,7 +149,7 @@ const suc = ()=>{
                 <div>Payment method:</div>
                 <select value={selectedPlan} onChange={handlePlanChange} className="bg-indigo-100  cursor-pointer block outline-none rounded-md w-1/3 py- px-3 pr-4 my-2">
                     <option value="" disabled selected>Select a plan</option>
-                    <option value="paypal">Paypal</option>
+                    <option value="Available soon">Paypal</option>
                     <option value="$mlking82">Cash app</option>
                     <option value="1kQ2hAQyKDDEWRi3Szw7Ajoan3Nk9y8gh">Bitcoin</option>
                 </select>

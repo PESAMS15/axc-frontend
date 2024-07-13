@@ -65,7 +65,7 @@ const Home = () => {
     // console.log(arr)
   return (
     <div className=''>
-        <div className={`bg-[url('https://www.wallpapertip.com/wmimgs/18-182838_rock-concert.jpg')] bg-blend-darken bg-[rgb(0,0,0,0.4)]  h-screen bg-center bg-cover `}>
+        <div className={`bg-[url('./Assets/wp3203900.webp')] bg-blend-darken bg-[rgb(0,0,0,0.4)]  h-screen bg-center bg-cover `}>
             <nav className={`w-full sticky flex justify-between  items-center  md:px-20 py-5  transition duration-300 top-0 ${  scrolled ? 'bg-white ' : 'bg-transparent text-white'}`}>
                 <div className={` transition duration-500  ps-2  ${scrolled? "text-blue-500": "text-white"}`}>
                     <h3 className='text-2xl font-serif font-semibold'><sup>AXC</sup> Tickets</h3>

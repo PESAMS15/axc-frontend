@@ -26,6 +26,14 @@ const Home = () => {
   }, [])
   // console.log(logined)
 
+
+  const scrolle = () => {
+    window.scroll({
+      top: 1000,
+      left: 0,
+      behavior: 'smooth'
+    });
+  }
   
 
     useEffect(() => {
@@ -65,28 +73,28 @@ const Home = () => {
     // console.log(arr)
   return (
     <div className=''>
-        <div className={`bg-[url('./Assets/wp3203900.webp')] bg-blend-darken bg-[rgb(0,0,0,0.4)]  h-screen bg-center bg-cover `}>
+        <div className={`bg-[url('./Assets/wp3203900.webp')] bg-blend-darken bg-[rgb(0,0,0,0.5)]  h-screen bg-center bg-cover `}>
             <nav className={`w-full sticky flex justify-between  items-center  md:px-20 py-5  transition duration-300 top-0 ${  scrolled ? 'bg-white ' : 'bg-transparent text-white'}`}>
                 <div className={` transition duration-500  ps-2  ${scrolled? "text-blue-500": "text-white"}`}>
                     <h3 className='text-2xl font-serif font-semibold'><sup>AXC</sup> Tickets</h3>
                    
                 </div>
                 <div className='  flex'>
-                <div className=' w-28'><Link to="/signin" className={` rounded ${logined? "hidden": ""} font-semibold p-2 px-3 ${scrolled?  "bg-blue-500 text-white ": "bg-white text-blue-500"}`}>Sign In</Link></div>
-                <div className=' w-28'><Link to="/signup" className={` rounded  ${logined? "hidden": ""} font-semibold p-2 px-3 ${scrolled?  "bg-red-500 text-white ": "bg-blue-600 text-white"}`}>Sign Up</Link></div>
+                <div className=' w-28'><Link to="/signin" className={` rounded ${logined? "hidden": ""} font-semibold p-2 px-3 ${scrolled?  "bg-gray-600 text-white ": "bg-blue-500 text-white-500"}`}>Sign In</Link></div>
+                <div className=' w-28'><Link to="/signup" className={` rounded  ${logined? "hidden": ""} font-semibold p-2 px-3 ${scrolled?  "bg-blue-500 text-white ": "bg-gray-600 text-white"}`}>Sign Up</Link></div>
                 </div>
                 {/* <div  className={`border   rounded p-2 w-1/4 ${scrolled? "border-gray-400": "border-white"}`}>
                     <input  placeholder='Search for your desired ticket' type="text" className={`outline-none bg-transparent w-full ${scrolled? "placeholder:text-gray-400": "placeholder:text-gray-300"} `} />
                 </div> */}
             </nav>
             <div className="mt-40 md:px-40 px-3">
-                <h1 className='font-semibold md:text-6xl md:w-1/3 w-full text-center md:text-left text-5xl text-white'>Let's make Live possible for you</h1>
-                <h5 className='text-white md:w-1/3 text-center md:text-left font-medium my-5 text-lg md:text-xl'>Get your Tickets for your favourite concerts here at cheap and affordable prices</h5>
+                <h1 className='font-semibold md:text-7xl md:w-1/2 w-full text-center md:text-left text-5xl text-white'>Let's make Live possible for you.</h1>
+                <h5 className='text-white md:w-1/3 text-center md:text-left font-medium my-4  text-xl md:text-2xl'>Get your Tickets for your favourite concerts here at cheap and affordable prices.</h5>
                 <div className="">
-                  <button className='px-6 w-full md:w-40 font-semibold py-2  rounded-3xl text-white bg-red-500 my-5' >
+                  <button className='px-7 w-full md:w-56 font-semibold py-3  text-2xl rounded-3xl text-white bg-gray-600 my-5' >
 
 
-                    <Link to="/signup">Get Started</Link>
+                {logined? <> <button onClick={scrolle} className='w-full'>View Available Tickets.</button> </> : <Link to="/signup">Get Started</Link>}
                   </button>
                 </div>
             </div>

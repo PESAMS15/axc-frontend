@@ -119,7 +119,7 @@ const Ticke = () => {
                               <div className='font-medium text-lg'>{el.city}, {el.venue}</div>
                           </div>
                         </div>
-                        <Link to={`/events/${el._id}`}><button className='md:px-3 px-4 p-2 flex  gap-2 md:rounded rounded-full bg-red-800 font-medium hover:bg-red-900 text-white'><span className='md:flex hidden'>Find tickets</span> > </button></Link>
+                        <Link to={`/events/${el._id}`}><button className='md:px-3 px-4 p-2 flex  gap-2 md:rounded rounded-full bg-gray-600 font-medium hover:bg-gray-700 text-white'><span className='md:flex hidden'>Find tickets</span> > </button></Link>
 
                       </div>
                   </>

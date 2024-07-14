@@ -124,7 +124,7 @@ const Find = () => {
             {/* <img className='absolute -z-10 top-0 w-full h-1/3 md:h-1/2 overflow-hidden ' src={data && data.ticketPic} alt="" /> */}
 
         </div>
-        <div className='md:ps-40 pe-2 lg:flex px-3 justify-between w-screen py-6'>
+        <div className='md:ps-40 pe-2 lg:flex items-start px-3 justify-between w-screen py-6'>
             <div className='md:w-1/2'>
             <div className={`flex gap-5 items-center ${showInfo? "hidden" : ""}`}>
                 <img src={data2 && data2.ticketPic} className='w-56 rounded h-32' alt="" />
@@ -159,7 +159,7 @@ const Find = () => {
                 
             </div>
             </div>
-            <div className="shadow-lg shadow-gray-300 ">
+            <div className="shadow-lg shadow-gray-300 me-4">
                 <h4 className="font-semibold mb-5 text-2xl text-blue-500 md:w-96 px-3 mt-3">Available Tickets</h4>
                 {data3 && data3.length  !==0? data3.map((el)=>(
                     <>
